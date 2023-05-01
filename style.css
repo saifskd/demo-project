@@ -10,7 +10,7 @@ a {
 }
 
 body {
-    background-color: #6075e5;
+    background-color: #eaecff;
 }
 
 .logo {
@@ -27,16 +27,17 @@ body {
     position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: #fce5cd;
+    background-color: #eaecff;
+    box-shadow: 0px 2px 10px 0px gainsboro;
     height: 500px;
 }
 
-.background_image div {
+.background_image_div {
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0px 0px 0px 200px;
+    margin-left: 200px;
 }
 
 .background_image_h2 {
@@ -44,7 +45,6 @@ body {
     color: #351c75;
     border-radius: 10px;
     width: auto;
-    margin: 140px 0px 0px 0px;
     padding: 10px 20px;
 
 }
@@ -57,29 +57,32 @@ body {
 
 .right_maunten {
     display: flex;
-    width: 250px;
+    width: 210px;
     height: 500px;
-    border-left: 1px solid gray;
-    background-color: #f7e1c7;
-    padding: 20px;
+    border-left: 2px solid gainsboro;
+    background-color: #eaecff;
+    padding: 20px 0px;
     transition: all .4s;
+
 }
 
 .right_maunten:hover {
-    background-color: #f7d7b5;
+    background-color: #e0e4fc;
     cursor: pointer;
 }
 
 .right_maunten ul li {
+    margin-left: 20px;
     list-style: none;
-    line-height: 60px;
+    line-height: 99px;
     font-weight: bold;
-    color: #e69138;
+    color: #565454;
     transition: all .4s;
+    border-bottom: 1px solid gainsboro;
 }
 
 .right_maunten ul li:hover {
-    color: #351c75;
+    color: #27057c;
     cursor: pointer;
 }
 
@@ -123,16 +126,17 @@ pre[class*=language-] {
     padding: 20px 0px;
     height: 100px;
     width: 100%;
-    background-color: #351c75;
-    box-shadow: 0px 2px 10px 0px grey;
+    background-color: #e6f8f5;
+    /* box-shadow: 0px 2px 10px 0px grey; */
+    border-bottom: 1px solid gainsboro;
 }
 
 .js_and_css_button_one {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    color: #f7d7b5;
-    background-color: #699eff;
+    color: #f5850c;
+    /* background-color: transparent; */
     font-size: 20px;
     padding: 20px 40px;
     /* border: 1px solid rgb(105, 99, 91); */
@@ -141,14 +145,15 @@ pre[class*=language-] {
     text-decoration: none;
 }
 
+/* 
 .js_and_css_button_border {
     width: 1px;
     height: 80px;
     border-left: 1px solid gray;
-}
+} */
 
 .js_and_css_button_one:hover {
-    background-color: #0a5ffc;
+    /* background-color: #0a5ffc; */
     cursor: pointer;
 }
 
@@ -172,44 +177,64 @@ pre[class*=language-] {
 
 .MORE_OPTIONS {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    font-size: 22px;
     text-align: center;
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid #fff;
+    color: #565454;
+    border-bottom: 3px solid #565454;
+    border-top: 3px solid #565454;
 }
 
-/* -------------------------------------------------------------------------- */
+.arrow_color {
+    color: #565454;
+    transition: all .4s;
+}
+
+.arrow_color:hover {
+    color: rgb(250, 98, 98);
+}
+
 
 .card_style {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: auto;
+    /* margin: auto; */
     width: auto;
     height: 400px;
 }
 
+.all_cards_father {
+    margin: 0px;
+    padding: 0px;
+
+}
 
 
 
 
 .card_style_alimant {
+    position: relative;
     display: flex;
     justify-content: center;
-    position: relative;
     align-items: center;
-    height: 200px;
-    width: 400px;
-    padding: 40px;
+    height: 205px;
+    width: 450px;
+    padding: 10px;
     background-color: #373948;
     border-radius: 4px;
-    margin: auto;
     border: 10px solid #fcfdfd;
-    box-shadow: 0px 2px 10px 0px gray;
+    box-shadow: 0px 2px 10px 0px gainsboro;
     transition: all .6s !important;
+
+}
+
+.card_style_bottum {
+    margin-bottom: 100px;
+    justify-content: center;
+
 }
 
 .card_style_alimant:hover {
@@ -234,52 +259,89 @@ pre[class*=language-] {
     cursor: pointer;
 }
 
-.top_button_menu {
-    border-radius: 50%;
-}
 
-.top_button_submenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    height: 250px;
-    width: 250px;
-    font-size: 20px;
-    background-color: #373948;
-    color: #fc870a;
-    /* z-index: 10; */
-    margin-right: 40px;
-    text-decoration: none;
-    border: 6px solid #fc870a;
-    border-radius: 50%;
-    cursor: pointer;
-}
+@media screen and (max-width: 450px) {
 
-.top_button_submenu h2 {
-    border-top: 4px solid #fc870a;
-    border-bottom: 4px solid #fc870a;
-    padding: 10px;
-}
+    .background_image_div {
+        /* margin-left: 30px; */
+        margin: auto;
+    }
 
-/* .top_button_menu_border {
-    border: 10px solid #323235;
-    background-color: #fff;
-    border-radius: 20px 0px 0px 0px;
-} */
+    .logo {
+        height: 50px;
+        border-radius: 0px 0px 25px 0px;
+        padding: 3px 10px 10px 3px;
+
+    }
 
 
-.futter {
-    width: 100%;
-    height: 400px;
-    background-color: #323235;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 60px 0px 0px;
-}
+    .background_image_h2 {
+        font-size: 20px;
+    }
 
-.futter b {
-    color: #f7d7b5;
-    font-size: 40px;
+    .right_maunten {
+        display: none;
+    }
+
+    .card_style {
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+
+    }
+
+
+    .card_style_alimant {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        border-radius: 5px;
+        width: 190px;
+        padding: 0px 10px;
+
+        /* padding: 20px 5px; */
+    }
+
+    .card_style_bottum {
+        margin-bottom: 50px;
+    }
+
+
+    .footer_flex {
+        flex-direction: column;
+    }
+
+
+    element.style {}
+
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+        padding: 0px;
+        font-family: "Work Sans";
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    user agent stylesheet h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .MORE_OPTIONS {
+        font-size: 15px;
+    }
+
 }

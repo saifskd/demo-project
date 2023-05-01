@@ -1,0 +1,378 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: "Work Sans";
+}
+
+body {
+    background: #fff;
+}
+
+header {
+    background: #fff;
+    height: 100px;
+    box-shadow: 0px 2px 10px 0px grey;
+}
+
+header img {
+    margin-top: 10px;
+    height: 60px;
+    width: auto;
+}
+
+.headerdisply {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.headerhomeimage {
+    height: auto;
+    width: 30px;
+    margin-right: 10px;
+}
+
+#hedershotdisply {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.headerfistbutton {
+    cursor: pointer;
+    border: none;
+    line-height: 1.2;
+    border-radius: 4px;
+    background: hsla(0, 0%, 65%, .102);
+    padding: 0px 20px;
+    height: 40px;
+    font-size: 15px;
+    margin-right: 10px;
+    transition: all .4s
+}
+
+.headerfistbutton:hover {
+    color: #0994db;
+}
+
+.headerfistbutton2 {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 9pt;
+    height: 35px;
+    border-color: #0994db;
+    padding: 1px 15px 1px 13px;
+    border-radius: 6px;
+    color: #5ab5e3;
+    font-weight: 600;
+    letter-spacing: .54px;
+    margin-right: 40px;
+    line-height: 1.2;
+    transition: all .4s
+}
+
+.headerfistbutton2:hover {
+    background: #0994db;
+    color: #fff;
+}
+
+.menu {
+    margin-top: 5px;
+
+}
+
+.menu__list {
+    display: flex;
+    list-style: none;
+
+
+}
+
+.menu__item {
+    margin-right: 20px;
+    padding: 10px 18px;
+    transition: all .2s;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 20px 0px 10px 0px;
+}
+
+.header__button {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu__button {
+    margin-right: 10px;
+    height: 40px;
+    font-size: 9pt;
+    padding: 10px 18px;
+    background: #5ab5e3;
+    color: #fff;
+    border: 2px solid #0994db;
+    border-radius: 6px;
+    transition: all .4s
+}
+
+.menu__button:hover {
+    background: #0994db;
+    cursor: pointer;
+}
+
+
+
+.menu__item:hover {
+    color: #0994db;
+}
+
+
+.menu__item>ul {
+    display: none;
+    z-index: 10;
+    position: absolute;
+}
+
+
+.menu__item:hover>ul {
+    list-style: none;
+    display: block;
+    min-width: 200px;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.menu__item-submenu {
+    padding: 10px 10px;
+    border-top: 1px solid black;
+}
+
+.background__image {
+    box-shadow: 2px 2px 10px -2px black;
+    height: 550px;
+    width: 82pc;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+
+}
+
+.background__image__h2 {
+
+    color: #fff;
+    font-size: 48px;
+
+}
+
+.background__image__fonts {
+    box-shadow: 2px 2px 10px 0px grey;
+    border-radius: 20px;
+    position: absolute;
+    padding: 40px 20px;
+    top: 240px;
+    left: 105px;
+    right: 105px;
+}
+
+.background__image__fonts p {
+    color: #fff;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.background__image__button {
+    font-size: 16px;
+    margin-right: 40px;
+    margin-top: 50px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 18px;
+
+}
+
+.About_menu {
+    display: flex;
+    margin: 40px 60px;
+    padding: 20px 60px;
+    justify-content: space-between;
+
+
+}
+
+.About_menu__image {
+    box-shadow: 10px 5px 10px 0px grey;
+    height: 325px;
+    width: auto;
+    border-radius: 9pt;
+}
+
+.About_menu_one {
+    padding-right: 170px;
+}
+
+.About_menu_one_h2 {
+    font-size: 30px;
+    color: #000;
+    /* padding: 20px 0px 0px 0px; */
+}
+
+.About_menu_one_p {
+    line-height: 1.44;
+    font-size: 15px;
+    margin-top: 20px;
+    color: rgba(3, 51, 51, .6);
+}
+
+.About_menu_one_button {
+    font-size: 16px;
+    margin-right: 40px;
+    margin-top: 20px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 18px;
+}
+
+.card_menu {
+    box-shadow: 2px 2px 10px -2px black;
+    border-radius: 24px;
+    background: #f8faf2;
+    padding: 20px 4%;
+    margin: 10px 40px;
+}
+
+.explore_style {
+    margin: 20px 10px;
+}
+
+.explore_style_item {
+    /* color: green; */
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.card_menu_item {
+    display: flex;
+
+}
+
+.card_menu_submenu img {
+    box-shadow: 6px 5px 10px 0px grey;
+    height: 235px;
+    margin: 10px;
+    border-radius: 9pt;
+    width: auto;
+}
+
+.card_menu_submenu h4 {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.card_menu_submenu p {
+    line-height: 1.44;
+    color: rgba(3, 51, 51, .6);
+    font-weight: 500;
+}
+
+.card_menu_item_last {
+    padding: 10px 45px 20px 0px;
+}
+
+.card_menu_item_button {
+    display: flex;
+}
+
+.card_menu_item_button_one {
+    margin-right: 10px;
+    height: 45px;
+    padding: 15px 20px;
+    background: #5ab5e3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: all .4s;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.card_menu_item_button_two {
+    background-color: transparent;
+    cursor: pointer;
+    border-color: #0994db;
+    border-radius: 6px;
+    color: #5ab5e3;
+    font-weight: 600;
+    letter-spacing: .54px;
+    line-height: 1.2;
+    transition: all .4s;
+    font-size: 16px;
+    height: 45px;
+    padding: 10px 18px;
+    margin-top: 25px;
+
+}
+
+.card_menu_item_button_two:hover {
+    background: #0994db;
+    color: #fff;
+}
+
+
+.card_menu_item_button_one:hover {
+    background: #0994db;
+    cursor: pointer;
+}
+
+
+.need_one-card img {
+    box-shadow: 2px 2px 10px -2px black;
+    height: 180px;
+    width: auto;
+    border-radius: 22px;
+}
+
+.need_one-card {
+    margin: 50px 0px 20px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.need_one-card_item {
+    width: 62pc;
+    position: absolute;
+    top: 40px;
+    /* padding: 40px 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.need_one-card_item div h2 {
+    color: #f8faf2;
+    margin-bottom: 10px;
+}
+
+.need_one-card_item div p {
+    font-size: 15px;
+    line-height: 1.44;
+    color: #eea9c6;
+}
+
+.need_one-card_item button {
+    height: 55px;
+    width: 200px;
+    border-radius: 13px;
+}
