@@ -329,6 +329,12 @@ pre[class*=language-] {
         justify-content: space-around;
     }
 
+    code[class*=language-],
+    pre[class*=language-] {
+        font-size: 10px !important;
+
+
+    }
 
     .card_style_alimant {
         display: flex;
